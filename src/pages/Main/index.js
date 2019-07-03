@@ -3,7 +3,7 @@ import { View, FlatList, ActivityIndicator } from 'react-native';
 import styles from './styles';
 import Header from '../../components/Header';
 import BudgetItem from '../../components/BudgetItem';
-
+import api from '../../services/api';
 
 export default class Main extends React.Component {
   state = {
@@ -16,11 +16,22 @@ export default class Main extends React.Component {
         value: 'R$ 120,00',
       },
     ],
-    loading: false,
+    loading: true,
     refreshing: false,
   };
 
-  componentDidMount() {}
+  componentDidMount() {
+    this.getBudgets();
+  }
+
+  getBudgets = async () => {
+    try {
+      const { data } = await api.get('/proposals');
+      this.setState({ budgets: data, loading: false });
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   renderListItem = ({ item }) => <BudgetItem budget={item} />;
 
