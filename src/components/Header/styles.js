@@ -1,15 +1,19 @@
 import { StyleSheet } from 'react-native';
+import { getStatusBarHeight } from 'react-native-status-bar-height';
+import { colors, metrics } from '../../styles';
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: colors.dark,
+    height: 54 + getStatusBarHeight(true),
+    paddingTop: getStatusBarHeight(true),
     justifyContent: 'center',
     alignItems: 'center',
-    height: 54,
-    backgroundColor: '#293742',
-    padding: 10,
+    paddingHorizontal: metrics.basePadding,
+    marginBottom: 20,
   },
   title: {
-    color: '#57B23F',
+    color: colors.green,
     fontSize: 18,
     fontWeight: 'bold',
   },
