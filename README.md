@@ -1,33 +1,38 @@
-<h1>OFICINA APP</h1>
+<h1>OFICINA APP - SOLUÇÃO</h1>
 
-- Estrutura do projeto
+<h2> Estrutura do projeto</h2>
   <p>
-  O código react-native encontra-se dentro da pasta src. Na raiz da pasta src, encontramos o arquivo componente App(index.js) que envolve toda aplicação.
+  Os componentes react-native encontra-se dentro da pasta src. Na raiz da pasta src, encontramos o arquivo index.js que contém o componente <App /> envolve toda aplicação.
   <p>
-
+<h3>Estrutura lógica das pastas </h3>
 <ul>
-  <li>components -> Armazena os componentes reutilizáveis da aplicação. Ex: Header.js </li>
-  <li>services -> armazena dados de serviços externos , como por exemplo a URL_BASE da api.</li>
-  <li>pages -> armazena as telas do app. Cada tela contém um arquivo index.js e um style.js</li>
-  <li>styles -> armazena estilos globais da aplicação. Ex: cores, métricas e etc ... </li>
+  <li>components -> Armazena os componentes reutilizáveis da aplicação. Ex: Header.js, Modais e dentre outros. </li>
+  <li>services -> Armazena dados de serviços externos , como por exemplo a URL_BASE da api.</li>
+  <li>pages -> Armazena as telas do app. Cada tela contém um arquivo index.js e um styles.js</li>
+  <li>styles -> Armazena estilos globais da aplicação. Ex: cores, métricas ... </li>
 </ul>
 
 <hr>
-- Dependências utilizadas
-<ul>
-    <li>axios -> cliente http utilizado para realizar as requisições a api</li>
-      <li>prop-types -> utilizado para realiza verificação de tipo em tempo de execução para propriedades(props) React</li>
-      <li>react-native-modal -> Lib com componentes reutilizáveis de Modal</li>
-      <li>react-native-status-bar-height -> Utilizado para o tratamento dos styles em dispositivos ios</li>
-      <li> Eslint - Foi utilizado para padronizar o style guide do código segundo as recomendações do airbnb</li>
-</ul>
 
+<h2>Dependências utilizadas</h2>
+<p> Os recursos abaixo foram usados para a solução do App.
+<ul>
+      <li>axios -> cliente http utilizado para realizar as requisições a api.</li>
+      <li>prop-types -> utilizado para realiza verificação de tipo em tempo de execução para propriedades(props) React.</li>
+      <li>react-native-modal -> Lib com componentes reutilizáveis de Modal.</li>
+      <li>react-native-status-bar-height -> Utilizado para o tratamento dos styles em dispositivos ios.</li>
+      <li>eslint - Foi utilizado para padronizar o projeto com o <i>style guide</i> seguindo as recomendações do airbnb.</li>
+</ul>
 <hr>
-- Instruções
+
+<h2>Instruções</h2>
 <ul>
     <li>
-    Para simular a solução do oficina app é necessário ter um ambiente bem configurado. Segue a melhor refêrencia de instalação desse ambiente: https://docs.rocketseat.dev/ambiente-react-native/introducao
+    Para simular a solução do oficina app é necessário ter um ambiente bem configurado. Segue a melhor referência de instalação desse ambiente: https://docs.rocketseat.dev/ambiente-react-native/introducao
      </li> 
-    <li>Na pasta raiz do projeto, execute o comando yarn install </li>
-    <li>Execute o comando react-native run-android. É necessário já ter um emulador rodando.</li>
+    <li>Na pasta raiz do projeto, execute o comando yarn install.(Tenha o ambiente já configurado) </li>
+    <li>Execute o comando react-native run-android(É necessário já ter um emulador rodando)</li>
 </ul>
+
+<h2>Exemplo da aplicação</h2>
+https://youtu.be/-F_AuRtJdno
