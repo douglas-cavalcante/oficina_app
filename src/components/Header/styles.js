@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: metrics.basePadding,
-    marginBottom: 20,
+    marginBottom: metrics.baseMargin * 2,
   },
   title: {
     color: colors.green,
